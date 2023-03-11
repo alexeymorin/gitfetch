@@ -26,7 +26,7 @@ function App() {
       <input value={keyword} onChange={e => setKeyword(e.target.value)}></input>
       <button onClick={fetchData}>Fetch</button>
       <div className='ag-theme-material' style={{height: 500, width: '90%'}}>
-        <AgGridReact rowData={data} columnDefs={columns} />
+        <AgGridReact rowData={data} columnDefs={columns} pagination={true} paginationPageSize={8} />
       </div>
     </div>
   );
